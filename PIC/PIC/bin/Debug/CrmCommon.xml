@@ -1,0 +1,1329 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CrmCommon</name>
+    </assembly>
+    <members>
+        <member name="T:CrmCommon.XmlHelper">
+            <summary>
+            XML处理类
+            </summary>
+        </member>
+        <member name="F:CrmCommon.XmlHelper._FilePath">
+            <summary>
+            xml文件物理路径  
+            </summary>  
+        </member>
+        <member name="F:CrmCommon.XmlHelper._xml">
+            <summary>  
+            xml文档  
+            </summary>  
+        </member>
+        <member name="F:CrmCommon.XmlHelper._element">
+            <summary>  
+            xml文档根节点  
+            </summary>  
+        </member>
+        <member name="M:CrmCommon.XmlHelper.#ctor(System.String)">
+            <summary>  
+            给xml文档路径赋值  
+            </summary>  
+            <param name="xmlFilePath"></param>  
+        </member>
+        <member name="M:CrmCommon.XmlHelper.GetXmlNode(System.String,System.String)">
+            <summary>  
+            获取指定路径节点  
+            </summary>  
+            <param name="xPath"></param>  
+            <returns></returns>  
+        </member>
+        <member name="M:CrmCommon.XmlHelper.GetXmlNodeList(System.String,System.String)">
+            <summary>  
+            获取指定路径节点下孩子节点列表  
+            </summary>  
+            <param name="xmlFileName"></param>  
+            <param name="xPath"></param>  
+            <returns></returns>  
+        </member>
+        <member name="M:CrmCommon.XmlHelper.GetXmlAttribute(System.String,System.String,System.String)">
+            <summary>  
+            获取指定路径节点的属性与指定属性名匹配  
+            </summary>  
+            <param name="xmlFileName"></param>  
+            <param name="xPath">要匹配的XPath表达式(例如:"//节点名//子节点名</param>  
+            <param name="attributeName">指定的属性名称</param>  
+            <returns></returns>  
+        </member>
+        <member name="M:CrmCommon.XmlHelper.GetNodeAttributes(System.String,System.String)">
+            <summary>  
+            获取指定节点的属性集合  
+            </summary>  
+            <param name="xmlFileName"></param>  
+            <param name="xPath"></param>  
+            <returns></returns>  
+        </member>
+        <member name="M:CrmCommon.XmlHelper.UpdateAttribute(System.String,System.String,System.String,System.String)">
+            <summary>  
+            更新指定节点的某一属性设定其属性值value  
+            </summary>  
+            <param name="xmlFileName">xml文档路径</param>  
+            <param name="xPath"></param>  
+            <param name="attributeOldeName">旧属性名称</param>  
+            <param name="attributeNewName">新属性名称</param>  
+            <param name="value">属性值</param>  
+            <returns>成功返回true,失败返回false</returns>  
+        </member>
+        <member name="M:CrmCommon.XmlHelper.DeleteAttributes(System.String,System.String)">
+            <summary>  
+            删除指定节点的所有属性  
+            </summary>  
+            <param name="xmlFileName"></param>  
+            <param name="xPath"></param>  
+            <returns>成功返回true,失败返回false</returns>  
+        </member>
+        <member name="M:CrmCommon.XmlHelper.DeleteOneAttribute(System.String,System.String,System.String)">
+            <summary>  
+            删除匹配属性名称的指定节点的属性  
+            </summary>  
+            <param name="xmlFileName"></param>  
+            <param name="xPath"></param>  
+            <param name="attributeName"></param>  
+            <returns></returns>  
+        </member>
+        <member name="M:CrmCommon.XmlHelper.AddAttribute(System.String,System.String,System.String,System.String)">
+            <summary>  
+            创建指定节点的属性,如果属性存在则不创建  
+            </summary>  
+            <param name="xmlFileName"></param>  
+            <param name="xPath"></param>  
+            <param name="attributeName"></param>  
+            <param name="value"></param>  
+            <returns></returns>  
+        </member>
+        <member name="M:CrmCommon.XmlHelper.AddNode(System.String,System.String,System.String,System.String)">
+            <summary>  
+            为某一指定路径节点下添加新的节点，如果该节点存在，则不添加  
+            </summary>  
+            <param name="xmlFileName">xml文档路径</param>  
+            <param name="xPath">需要添加节点的路径</param>  
+            <param name="nodeName">节点名称</param>  
+            <param name="innerText">节点文本值</param>  
+            <returns>成功返回true,存在返回false</returns>  
+        </member>
+        <member name="M:CrmCommon.XmlHelper.UpdateNode(System.String,System.String,System.String,System.String)">
+            <summary>  
+            查找指定的节点，更新其节点值
+            </summary>  
+            <param name="xmlFileName"></param>  
+            <param name="xPath"></param>  
+            <param name="nodeName"></param>  
+            <param name="innerText"></param>  
+            <returns></returns>  
+        </member>
+        <member name="M:CrmCommon.XmlHelper.deleteNode(System.String,System.String,System.String)">
+            <summary>  
+            删除指定节点名称为nodeName的所有节点，如果该节点有子节点，则不能删除  
+            </summary>  
+            <param name="xmlFileName"></param>  
+            <param name="xPath"></param>  
+            <param name="nodeName"></param>  
+            <returns></returns>  
+        </member>
+        <member name="M:CrmCommon.XmlHelper.UpdateChildNode(System.String,System.String,System.String,System.String,System.String)">
+            <summary>  
+            根据指定节点名称更新其下指定的子节点的值  
+            </summary>  
+            <param name="xmlFileName"></param>  
+            <param name="xPath"></param>  
+            <param name="nodeName"></param>  
+            <param name="innerText"></param>  
+            <returns></returns>  
+        </member>
+        <member name="M:CrmCommon.XmlHelper.CreateXMLElement">
+            <summary>  
+            创建XML的根节点  
+            </summary>  
+        </member>
+        <member name="M:CrmCommon.XmlHelper.Save">
+            <summary>
+            保存XML文件  
+            </summary>   
+        </member>
+        <member name="M:CrmCommon.XmlHelper.CreateXmlDocument(System.String,System.String,System.String,System.String,System.String)">
+            <summary>  
+            创建一个XML文档  
+            </summary>  
+            <param name="xmlFileName">XML文档完全文件名(包含物理路径)</param>  
+            <param name="rootNodeName">XML文档根节点名称(须指定一个根节点名称)</param>  
+            <param name="version">XML文档版本号(必须为:"1.0")</param>  
+            <param name="encoding">XML文档编码方式</param>  
+            <param name="standalone">该值必须是"yes"或"no",如果为null,Save方法不在XML声明上写出独立属性</param>  
+            <returns>成功返回true,失败返回false</returns>  
+        </member>
+        <member name="M:CrmCommon.ToolsModified.Heartbeat(System.String)">
+            <summary>
+            心跳包
+            </summary>
+            <param name="heart_desc">心脏的描述,描述即为主键,会先删除相同的心脏</param>
+        </member>
+        <member name="M:CrmCommon.ToolsModified.Heartbeat(System.String,System.String)">
+            <summary>
+            心跳包 bly 2018-2-5 11:23:04
+            </summary>
+            <param name="heart_desc">心脏的描述,描述即为主键,会先删除相同的心脏</param>
+            <param name="mainid">任务ID</param>
+        </member>
+        <member name="M:CrmCommon.MobileUtils.MobileNo(System.String)">
+            <summary>
+            号段
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.MobileUtils.Get170(System.String)">
+            <summary>
+            170号段
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.MobileUtils.IsPhone(System.String)">
+            <summary>
+            判断是否是正确的手机号码格式
+            </summary>
+            <param name="txtPhone">手机号码</param>
+            <returns></returns>
+        </member>
+        <member name="T:CrmCommon.FreeBoardChecked">
+            <summary>
+            免登处理类
+            </summary>
+        </member>
+        <member name="M:CrmCommon.FreeBoardChecked.GetFreeBoardUrl(System.String,System.Int32,System.String)">
+            <summary>
+            生成免登地址
+            </summary>
+            <param name="sellerid">sellerid</param>
+            <param name="validityDay">免登地址有效期，单位：天</param>
+            <param name="doMain">免登域名</param>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.FreeBoardChecked.CheckFreeBoard(System.String,System.String)">
+            <summary>
+            验证免登验证码
+            </summary>
+            <param name="sellerid"></param>
+            <param name="enDmt">加密字符串 格式：随机码|sellerid|时间戳|链接有效天数</param>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.FreeBoardChecked.DateTimeToUnixTime(System.DateTime)">
+            <summary>
+            时间转时间戳
+            </summary>
+            <param name="validTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.FreeBoardChecked.UnixTimeToDateTime(System.Int64)">
+            <summary>
+            时间戳转时间
+            </summary>
+            <param name="unixTimeStamp"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CrmCommon.EnterpriseHandle">
+            <summary>
+            企业版登录验证处理类
+            </summary>
+        </member>
+        <member name="M:CrmCommon.EnterpriseHandle.GetEnterprise(System.String)">
+            <summary>
+            企业版登录验证
+            </summary>
+            <param name="sellerid"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CrmCommon.DmShortUrlCommom">
+            <summary>
+            多卖短网址处理类
+            </summary>
+        </member>
+        <member name="M:CrmCommon.DmShortUrlCommom.GetShortUrl(System.String,System.String)">
+            <summary>
+            根据长网址获取多卖短网址
+            </summary>
+            <param name="url">长链接</param>
+            <param name="sellerid">sellerid,可为空</param>
+            <returns>短链接</returns>
+        </member>
+        <member name="M:CrmCommon.DmShortUrlCommom.InsertUrl(System.String,System.String,System.String)">
+            <summary>
+            插入短链接
+            </summary>
+            <param name="longUrl">长链接</param>
+            <param name="shortUrl">短链接</param>
+            <param name="sellerId">sellerId</param>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.DmShortUrlCommom.GenerateId(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="P:CrmCommon.DmShortUrlCommom.DmShortDomain">
+            <summary>
+            多卖短网址域名
+            </summary>
+        </member>
+        <member name="M:CrmCommon.DataTableToList.GetPhoneList(System.Data.DataTable)">
+            <summary>
+            DataTable转List  订单提醒专用
+            </summary>
+            <param name="dt"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.DataTableToList.GetBlackBuyerNickList(System.Data.DataTable)">
+            <summary>
+            DataTable转List  黑名单专用
+            </summary>
+            <param name="dt"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.DataTableToList.DataTableToListHandle(System.Data.DataTable,System.String)">
+            <summary>
+            DataTable转List
+            </summary>
+            <param name="dt"></param>
+            <param name="drName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.DataTableToList.DataTableToListHandle(System.Data.DataTable,System.String,System.String,System.Collections.Generic.List{System.String}@)">
+            <summary>
+            DataTable转List
+            </summary>
+            <param name="dt"></param>
+            <param name="drName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CrmCommon.TxtDecrypt">
+            <summary>
+            隐私数据解密
+            </summary>
+        </member>
+        <member name="F:CrmCommon.TxtDecrypt.iv">
+            <summary>
+            3des解密矢量
+            </summary>
+        </member>
+        <member name="F:CrmCommon.TxtDecrypt.aStrKey">
+            <summary>
+            3des加解密密钥
+            </summary>
+        </member>
+        <member name="M:CrmCommon.TxtDecrypt.StringDecrypt(System.String)">
+            <summary>
+            隐私数据解密
+            </summary>
+            <param name="strDes"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.TxtDecrypt.StringEncrypt(System.String)">
+            <summary>
+            隐私数据加密
+            </summary>
+            <param name="strEns"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.TxtDecrypt.Encrypt3Des(System.String)">
+            <summary>
+            3des加密
+            </summary>
+            <param name="aStrString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.TxtDecrypt.Decrypt3Des(System.String)">
+            <summary>
+            3des解密
+            </summary>
+            <param name="aStrString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.TxtDecrypt.GetTradeDecrypt(Top.Api.Domain.Trade)">
+            <summary>
+            订单关键属性解码
+            </summary>
+            <param name="trade">订单</param>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.TxtDecrypt.GetSellerInfoDecrypt(System.Data.DataTable)">
+            <summary>
+            sellerinfo关键信息解密
+            </summary>
+            <param name="sellerDt"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.TxtDecrypt.GetSellerInfoDecrypt(SellerInfoEntity)">
+            <summary>
+            sellerinfo关键信息解密
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Text">
+             <summary>
+            Text 的摘要说明
+             </summary>
+        </member>
+        <member name="M:Text.GetStringLength(System.String)">
+            <summary>
+            获取字符串长度，注意，1个汉字长度为2
+            </summary>
+            <param name="str">要检查字符串</param>
+            <returns>字符串长度</returns>
+        </member>
+        <member name="M:Text.GetHalfUnixID">
+            <summary>
+            Unix作为主键 add by JC 2015-4-23
+            </summary>
+            <returns>返回一个字符串</returns>
+        </member>
+        <member name="M:Text.CutString(System.String,System.Int32,System.String)">
+            <summary>
+            字符串如果操过指定长度则将超出的部分用指定字符串代替
+            </summary>
+            <param name="strStr">要检查的字符串</param>
+            <param name="strLength">指定长度</param>
+            <param name="strReplace">用于替换的字符串</param>
+            <returns>截取后的字符串</returns>
+        </member>
+        <member name="M:Text.RTrim(System.String)">
+            <summary>
+            删除字符串尾部的回车/换行/空格
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Text.ClearBR(System.String)">
+            <summary>
+            清除给定字符串中的回车及换行符
+            </summary>
+            <param name="str">要清除的字符串</param>
+            <returns>清除后返回的字符串</returns>
+        </member>
+        <member name="M:Text.EncodeHtml(System.String)">
+            <summary>
+            替换html字符
+            </summary>
+        </member>
+        <member name="M:Text.RemoveHtml(System.String)">
+            <summary>
+            移除Html标记
+            </summary>
+            <param name="content"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Text.MD5(System.String)">
+            <summary>
+            MD5函数
+            </summary>
+            <param name="str">原始字符串</param>
+            <returns>MD5结果</returns>
+        </member>
+        <member name="M:Text.MD5(System.Byte[])">
+            <summary>
+            MD5函数
+            </summary>
+            <param name="str">原始字符串</param>
+            <returns>MD5结果</returns>
+        </member>
+        <member name="M:Text.SHA256(System.String)">
+            <summary>
+            SHA256函数
+            </summary>
+            /// <param name="str">原始字符串</param>
+            <returns>SHA256结果</returns>
+        </member>
+        <member name="M:Text.Spaces(System.Int32)">
+            <summary>
+            生成指定数量的html空格符号
+            </summary>
+        </member>
+        <member name="M:Text.Spaces(System.Int32,System.String)">
+            <summary>
+            生成指定数量的html符号
+            </summary>
+        </member>
+        <member name="M:Text.StrFormat(System.String)">
+            <summary>
+            替换回车换行符为html换行符
+            </summary>
+        </member>
+        <member name="M:Text.GetDate">
+            <summary>
+            返回标准日期格式string
+            </summary>
+        </member>
+        <member name="M:Text.GetDate(System.String,System.String)">
+            <summary>
+            返回指定日期格式
+            </summary>
+        </member>
+        <member name="M:Text.GetDateTime">
+            <summary>
+            返回标准时间格式string:yyyy-MM-dd HH:mm:ss
+            </summary>
+        </member>
+        <member name="M:Text.HtmlEncode(System.String)">
+            <summary>
+            返回 HTML 字符串的编码结果
+            </summary>
+            <param name="str">字符串</param>
+            <returns>编码结果</returns>
+        </member>
+        <member name="M:Text.HtmlDecode(System.String)">
+            <summary>
+            返回 HTML 字符串的解码结果
+            </summary>
+            <param name="str">字符串</param>
+            <returns>解码结果</returns>
+        </member>
+        <member name="M:Text.UrlEncode(System.String)">
+            <summary>
+            返回 URL 字符串的编码结果
+            </summary>
+            <param name="str">字符串</param>
+            <returns>编码结果</returns>
+        </member>
+        <member name="M:Text.UrlDecode(System.String)">
+            <summary>
+            返回 URL 字符串的编码结果
+            </summary>
+            <param name="str">字符串</param>
+            <returns>解码结果</returns>
+        </member>
+        <member name="M:Text.CodeBuild">
+            <summary>
+            生成系统需要的内码
+            </summary>
+            <returns>返回一个22位的内码</returns>
+        </member>
+        <member name="M:Text.CodeBuild(System.String)">
+            <summary>
+            根据当前时间和sellerId生成内码
+            </summary>
+            <param name="sellerId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Text.CodeBuild(System.String,System.Int32)">
+            <summary>
+            根据当前时间，sellerId和数字编号生成内码
+            </summary>
+            <param name="sellerId"></param>
+            <param name="number">数字编号</param>
+            <returns></returns>
+        </member>
+        <member name="M:Text.Get(System.String)">
+            <summary>
+            取URL传递的参数
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <!-- 对于成员“M:Text.Post(System.String)”忽略有格式错误的 XML 注释 -->
+        <member name="M:Text.IsEmail(System.String)">
+            <summary>
+            判断是否是正确的手机号码格式
+            </summary>
+            <param name="txtEmail">邮箱号码</param>
+            <returns></returns>
+        </member>
+        <member name="M:Text.GetSitePath(System.String)">
+            <summary>
+            获得当前绝对路径
+            </summary>
+            <param name="strPath">指定的路径</param>
+            <returns>绝对路径</returns>
+        </member>
+        <member name="M:Text.GetFileContent(System.String)">
+            <summary>
+            获取文件内容
+            </summary>
+            <param name="strPath">文件路径</param>
+            <returns>文件内容</returns>
+        </member>
+        <member name="M:Text.CheckSpecialString(System.String)">
+            <summary>
+            检查特殊字符串
+            </summary>
+            <param name="str">检查字符串</param>
+            <returns>True：包含特殊字符串，False：不包含特殊字符串</returns>
+        </member>
+        <member name="M:Text.CheckSpecialStringReturn(System.String)">
+            <summary>
+            检查特殊字符串
+            </summary>
+            <param name="str">检查字符串</param>
+            <returns>True：包含特殊字符串，False：不包含特殊字符串</returns>
+        </member>
+        <member name="M:Text.string2Json(System.String)">
+            <summary>
+            Ajax中文字符处理
+            </summary>
+            <param name="s"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Text.CheckSpecialSingQuo(System.String)">
+            <summary>
+            检查单引号
+            </summary>
+            <param name="str">检查字符串</param>
+            <returns>True：包含特殊字符串，False：不包含特殊字符串</returns>
+        </member>
+        <member name="M:Text.GetDiffTime(System.DateTime,System.DateTime)">
+            <summary>
+            返回时间相隔的秒数
+            </summary>
+            <param name="dt1">被减的时间</param>
+            <param name="dt2">减的时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:Text.IsPhone(System.String)">
+            <summary>
+            判断是否是正确的手机号码格式
+            </summary>
+            <param name="txtPhone">手机号码</param>
+            <returns></returns>
+        </member>
+        <member name="M:Text.CheckSmsWord(System.String)">
+            <summary>
+            检测短信关键字
+            </summary>
+            <param name="strContent">短信内容</param>
+            <returns>检测到的关键字</returns>
+        </member>
+        <member name="M:Text.CaiZhong(System.String)">
+            <summary>
+            彩种
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Text.TeShuRe(System.String)">
+            <summary>
+            特殊字符处理
+            </summary>
+            <param name="sb"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Text.GetPhoneList(System.Data.DataTable)">
+            <summary>
+            DataTable转List  订单提醒专用
+            </summary>
+            <param name="dt"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Text.GetIP">
+            <summary>
+            获取IP
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Text.GetPhoneBlurring(System.String)">
+            <summary>
+            手机号码模糊化
+            </summary>
+            <param name="strphone">手机号码</param>
+            <returns></returns>
+        </member>
+        <member name="T:Text.CheckGetEnum">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:LogTextHelper">
+            <summary>
+            文本日志记录辅助类
+            </summary>
+        </member>
+        <member name="M:LogTextHelper.WriteLine(System.String)">
+            <summary>
+            记录文本日志
+            </summary>
+            <param name="message">日志信息</param>
+        </member>
+        <member name="M:LogTextHelper.WriteLine(System.String,System.String)">
+            <summary>
+            记录文本日志
+            </summary>
+            <param name="message">日志信息</param>
+        </member>
+        <member name="M:LogTextHelper.WriteLine(System.String,System.String,System.String)">
+            <summary>
+            记录文本日志
+            </summary>
+            <param name="className">类名</param>
+            <param name="funName">方法名</param>
+            <param name="message">日志信息</param>
+        </member>
+        <member name="M:CrmCommon.QueryHelper.GetQueryTable(System.Collections.Generic.List{System.String},System.Collections.Generic.List{Top.Api.Domain.QueryRow})">
+            <summary>
+            将御膳房返回的结果转换成DataTable
+            </summary>
+            <param name="listColumn"></param>
+            <param name="listRow"></param>
+            <returns></returns>
+        </member>
+        <member name="F:CrmCommon.YCHLOG.ychtype">
+            <summary>
+            御城河类型 0：sql 1:order 2.top
+            </summary>
+        </member>
+        <member name="F:CrmCommon.YCHLOG.db">
+            <summary>
+            sql联系的库
+            </summary>
+        </member>
+        <member name="F:CrmCommon.YCHLOG.strsql">
+            <summary>
+            sql
+            </summary>
+        </member>
+        <member name="F:CrmCommon.YCHLOG.trades">
+            <summary>
+            订单集合
+            </summary>
+        </member>
+        <member name="F:CrmCommon.YCHLOG.tradedt">
+            <summary>
+            订单表
+            </summary>
+        </member>
+        <member name="F:CrmCommon.YCHLOG.userid">
+            <summary>
+            用户id
+            </summary>
+        </member>
+        <member name="F:CrmCommon.YCHLOG.strati">
+            <summary>
+            cooike
+            </summary>
+        </member>
+        <member name="F:CrmCommon.YCHLOG.topvalue">
+            <summary>
+            Api日志
+            </summary>
+        </member>
+        <member name="M:CrmCommon.YCHLOG.#ctor(System.Collections.Generic.List{Top.Api.Domain.Trade},System.Data.DataTable,System.Int32)">
+            <summary>
+            御城河实例 订单日志 1
+            </summary>
+            <param name="trades">list订单集合</param>
+            <param name="tradedt">表订单集合</param>
+            <param name="ychtype">1</param>
+        </member>
+        <member name="M:CrmCommon.YCHLOG.#ctor(System.String,System.String,System.Int32)">
+            <summary>
+            御城河实例 sql日志 0
+            </summary>
+            <param name="db">数据库</param>
+            <param name="strsql">sql</param>
+            <param name="ychtype">0</param>
+        </member>
+        <member name="M:CrmCommon.YCHLOG.#ctor(System.String,System.Int32)">
+            <summary>
+            御城河实例 top 2
+            </summary>
+            <param name="topvalue">topvalue</param>
+            /// <param name="ychtype">2</param>
+        </member>
+        <member name="M:CrmCommon.YCHLOG.#ctor(System.String,System.String,System.String,System.Data.DataTable,System.Int32)">
+            <summary>
+            御城河实例 top 3
+            </summary>
+            <param name="userid">userid</param>
+            /// <param name="ychtype">3</param>
+        </member>
+        <member name="M:CrmCommon.YCHLOG.DoSqlInsert">
+            <summary>
+            御城河日志入库
+            </summary>
+        </member>
+        <member name="M:CrmCommon.YCHLOG.InsertWebLogNew">
+            <summary>
+            web订单访问日志
+            </summary>
+        </member>
+        <member name="M:CrmCommon.YCHLOG.InsertTopLogNew">
+            <summary>
+            Top日志
+            </summary>
+            <param name="topvalue">格式：taobao.trades.sold.get,参数1：值1,参数2：值2</param>
+            <param name="tradedt">DateTable</param>
+        </member>
+        <member name="M:CrmCommon.YCHLOG.InsertOrderLogNew">
+            <summary>
+            订单日志
+            </summary>
+            <param name="trades">订单号</param>
+            <param name="tradedt">DateTable</param>
+        </member>
+        <member name="M:CrmCommon.YCHLOG.InsertSqlLogNew">
+            <summary>
+            sql日志
+            </summary>
+            <param name="trades">订单号</param>
+            <param name="tradedt">DateTable</param>
+        </member>
+        <member name="M:CrmCommon.YCHLOG.InsertWebLog">
+            <summary>
+            web订单访问日志
+            </summary>
+        </member>
+        <member name="M:CrmCommon.YCHLOG.InsertOrderLog">
+            <summary>
+            订单日志
+            </summary>
+            <param name="trades">订单号</param>
+            <param name="tradedt">DateTable</param>
+        </member>
+        <member name="M:CrmCommon.YCHLOG.InsertSqlLog">
+            <summary>
+            sql日志
+            </summary>
+            <param name="trades">订单号</param>
+            <param name="tradedt">DateTable</param>
+        </member>
+        <member name="M:CrmCommon.YCHLOG.InsertTopLog">
+            <summary>
+            Top日志
+            </summary>
+            <param name="topvalue">格式：taobao.trades.sold.get,参数1：值1,参数2：值2</param>
+            <param name="tradedt">DateTable</param>
+        </member>
+        <member name="M:CrmCommon.YCHLOG.GetIp">
+            <summary>
+            获取ip
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.YCHLOG.DoBatchLog_Sql(System.String)">
+            <summary>
+            批量上传日志
+            </summary>
+        </member>
+        <member name="M:CrmCommon.YCHLOG.UplodeLog(System.String)">
+            <summary>
+            解析接受到的json数据，并拼接御城河日志上传
+            </summary>
+            <param name="jsonText"></param>
+        </member>
+        <member name="M:CrmCommon.YCHLOG.GetUploadData(Newtonsoft.Json.Linq.JObject,System.String,System.String)">
+            <summary>
+            根据参数返回签名，注意传入的参数名称是要从小到大排序好的
+            </summary>
+            <param name="para"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.YCHLOG.GetSign(Newtonsoft.Json.Linq.JObject,System.String)">
+            <summary>
+            根据参数返回签名，注意传入的参数名称是要从小到大排序好的
+            </summary>
+            <param name="para"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.YCHLOG.TeShuRe(System.String)">
+            <summary>
+            特殊字符处理
+            </summary>
+            <param name="sb"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TxtLog.WriteLine(System.String,System.String)">
+            <summary>
+            记录文本日志
+            </summary>
+            <param name="message">日志信息</param>
+        </member>
+        <member name="M:TxtLog.ErrorDateWriteLine(System.String,System.String)">
+            <summary>
+            记录文本日志
+            </summary>
+            <param name="message">日志信息</param>
+        </member>
+        <member name="M:TxtLog.WriteLineSQL(System.String,System.String)">
+            <summary>
+            记录文本日志
+            </summary>
+            <param name="message">日志信息</param>
+        </member>
+        <member name="M:TxtLog.WriteLine(System.String,System.String,System.String)">
+            <summary>
+            记录日志，支持创建文件夹路径
+            </summary>
+            <param name="message">日志信息</param>
+        </member>
+        <member name="M:TxtLog.WriteLineAll(System.String,System.String)">
+            <summary>
+            记录文本日志 只有一个总的文件  不分每天
+            </summary>
+            <param name="message">日志信息</param>
+        </member>
+        <member name="M:TxtLog.WriteLine(System.String)">
+            <summary>
+            记录文本日志
+            </summary>
+            <param name="message">日志信息</param>
+        </member>
+        <member name="M:TxtLog.WriteLineOns(System.String,System.String)">
+            <summary>
+            记录文本日志
+            </summary>
+            <param name="message">日志信息</param>
+        </member>
+        <member name="M:TxtLog.OperateLog(OperateLogInfoEntity,SellerInfoEntity)">
+            <summary>
+            操作日志记录
+            </summary>
+            <param name="sellerId">操作信息</param>
+        </member>
+        <member name="M:TxtLog.InsertToolsState(System.String)">
+            <summary>
+            记录tools状态
+            </summary>
+            <param name="desc">工具描述</param>
+        </member>
+        <member name="M:TxtLog.InsertToolsState(System.String,System.Int32)">
+            <summary>
+            记录tools状态
+            </summary>
+            <param name="desc">工具描述</param>
+             <param name="desc">预警状态 0：rds异常  1.工具异常  2.及时预警</param>
+        </member>
+        <member name="T:CrmCommon.SmsSendUtils">
+            <summary>
+            短信发送号码获取
+            </summary>
+        </member>
+        <member name="M:CrmCommon.SmsSendUtils.SmsSecondSend(System.Data.DataRow,System.String)">
+            <summary>
+            二次营销发送号码获取
+            </summary>
+            <param name="drMain">二次营销任务行</param>
+            <param name="TradeHistoryDBAddress">短信记录库</param>
+            <returns></returns>
+        </member>
+        <member name="T:CrmCommon.SendSms">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CrmCommon.SendSms.SendNew(System.String,System.String,System.String@)">
+            <summary>
+            
+            </summary>
+            <param name="strPhone"></param>
+            <param name="strContent"></param>
+            <param name="strError"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CrmCommon.PromotionWordsHandle">
+            <summary>
+            营销词检验处理类
+            </summary>
+        </member>
+        <member name="T:CrmCommon.Extend">
+            <summary>
+            作者：天盛 
+            创建日期：2018/05/07 22:57:00 
+            最后修改人：天盛
+            最后修改日期：2018/05/07 22:57:00 
+            描述说明：
+            修改历史：  
+            当前版本：v1.0.0.0 
+            </summary>
+            <summary>
+            作者：天盛 
+            创建日期：2018/05/07 22:39:23 
+            最后修改人：天盛
+            最后修改日期：2018/05/07 22:39:23 
+            描述说明：
+            修改历史：  
+            当前版本：v1.0.0.0 
+            </summary>
+            <summary>
+            作者：天盛 
+            创建日期：2018/05/07 22:17:22 
+            最后修改人：天盛
+            最后修改日期：2018/05/07 22:17:22 
+            描述说明：
+            修改历史：  
+            当前版本：v1.0.0.0 
+            </summary>
+            <summary>
+            作者：天盛 
+            创建日期：2018/05/06 20:58:22 
+            最后修改人：天盛
+            最后修改日期：2018/05/06 20:58:22 
+            描述说明：扩展方法之数据转换
+            修改历史：  
+            当前版本：v1.0.0.0 
+            </summary>
+        </member>
+        <member name="M:CrmCommon.Extend.Description(System.Boolean)">
+            <summary>
+            获取描述
+            </summary>
+            <param name="value">布尔值</param>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.Extend.Description(System.Nullable{System.Boolean})">
+            <summary>
+            获取描述
+            </summary>
+            <param name="value">布尔值</param>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.Extend.Format(System.Int32,System.String)">
+            <summary>
+            获取格式化字符串
+            </summary>
+            <param name="number">数值</param>
+            <param name="defaultValue">空值显示的默认文本</param>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.Extend.Format(System.Nullable{System.Int32},System.String)">
+            <summary>
+            获取格式化字符串
+            </summary>
+            <param name="number">数值</param>
+            <param name="defaultValue">空值显示的默认文本</param>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.Extend.Format(System.Decimal,System.String)">
+            <summary>
+            获取格式化字符串
+            </summary>
+            <param name="number">数值</param>
+            <param name="defaultValue">空值显示的默认文本</param>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.Extend.Format(System.Nullable{System.Decimal},System.String)">
+            <summary>
+            获取格式化字符串
+            </summary>
+            <param name="number">数值</param>
+            <param name="defaultValue">空值显示的默认文本</param>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.Extend.Format(System.Double,System.String)">
+            <summary>
+            获取格式化字符串
+            </summary>
+            <param name="number">数值</param>
+            <param name="defaultValue">空值显示的默认文本</param>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.Extend.Format(System.Nullable{System.Double},System.String)">
+            <summary>
+            获取格式化字符串
+            </summary>
+            <param name="number">数值</param>
+            <param name="defaultValue">空值显示的默认文本</param>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.Extend.FormatRmb(System.Decimal)">
+            <summary>
+            获取格式化字符串,带￥
+            </summary>
+            <param name="number">数值</param>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.Extend.FormatRmb(System.Nullable{System.Decimal})">
+            <summary>
+            获取格式化字符串,带￥
+            </summary>
+            <param name="number">数值</param>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.Extend.FormatPercent(System.Decimal)">
+            <summary>
+            获取格式化字符串,带%
+            </summary>
+            <param name="number"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.Extend.FormatPercent(System.Nullable{System.Decimal})">
+            <summary>
+            获取格式化字符串,带%
+            </summary>
+            <param name="number"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.Extend.FormatPercent(System.Double)">
+            <summary>
+            获取格式化字符串,带%
+            </summary>
+            <param name="number"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.Extend.FormatPercent(System.Nullable{System.Double})">
+            <summary>
+            获取格式化字符串,带%
+            </summary>
+            <param name="number"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.Extend.ToDateTimeString(System.DateTime,System.Boolean)">
+            <summary>
+            获取格式化时间字符串，带时分秒，格式：yyyy-MM-dd HH:mm:ss
+            </summary>
+            <param name="dateTime">日期</param>
+            <param name="isRemoveSecond">是否移除秒</param>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.Extend.ToDateTimeString(System.Nullable{System.DateTime},System.Boolean)">
+            <summary>
+            获取格式化时间字符串，带时分秒，格式：yyyy-MM-dd HH:mm:ss
+            </summary>
+            <param name="dateTime">日期</param>
+            <param name="isRemoveSecond">是否移除秒</param>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.Extend.ToDateString(System.DateTime)">
+            <summary>
+            获取格式化时间字符串，不带时分秒，格式：yyyy-MM-dd
+            </summary>
+            <param name="dateTime">日期</param>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.Extend.ToDateString(System.Nullable{System.DateTime})">
+            <summary>
+            获取格式化时间字符串，不带时分秒，格式：yyyy-MM-dd
+            </summary>
+            <param name="dateTime">日期</param>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.Extend.ToTimeString(System.DateTime)">
+            <summary>
+            获取格式化时间字符串，不带年月日，格式：HH:mm:ss
+            </summary>
+            <param name="dateTime">日期</param>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.Extend.ToTimeString(System.Nullable{System.DateTime})">
+            <summary>
+            获取格式化时间字符串，不带年月日，格式：HH:mm:ss
+            </summary>
+            <param name="dateTime">日期</param>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.Extend.ToMillisecondString(System.DateTime)">
+            <summary>
+            获取格式化字符串，带毫秒，格式："yyyy-MM-dd HH:mm:ss.fff"
+            </summary>
+            <param name="dateTime">日期</param>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.Extend.ToMillisecondString(System.Nullable{System.DateTime})">
+            <summary>
+            获取格式化字符串，带毫秒，格式："yyyy-MM-dd HH:mm:ss.fff"
+            </summary>
+            <param name="dateTime">日期</param>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.Extend.ToCNDateString(System.DateTime)">
+            <summary>
+            获取格式化字符串，不带时分秒，格式："yyyy年MM月dd日"
+            </summary>
+            <param name="dateTime">日期</param>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.Extend.ToCNDateString(System.Nullable{System.DateTime})">
+            <summary>
+            获取格式化字符串，不带时分秒，格式："yyyy年MM月dd日"
+            </summary>
+            <param name="dateTime">日期</param>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.Extend.ToCNDateTimeString(System.DateTime,System.Boolean)">
+            <summary>
+            获取格式化字符串，带时分秒，格式："yyyy年MM月dd日 HH时mm分ss秒"
+            </summary>
+            <param name="dateTime">日期</param>
+            <param name="isRemoveSecond">是否移除秒</param>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.Extend.ToCNDateTimeString(System.Nullable{System.DateTime},System.Boolean)">
+            <summary>
+            获取格式化字符串，带时分秒，格式："yyyy年MM月dd日 HH时mm分ss秒"
+            </summary>
+            <param name="dateTime">日期</param>
+            <param name="isRemoveSecond">是否移除秒</param>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.Extend.ToDouble(System.Object)">
+            <summary>
+            数据转换为双精度浮点数，null会转为0！
+            </summary>
+            <param name="data">数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.Extend.ToDouble(System.Object,System.Int32)">
+            <summary>
+            转换为双精度浮点数，并按指定的位数四舍五入，null会转为0！
+            </summary>
+            <param name="data">数据</param>
+            <param name="digits">小数位数</param>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.Extend.ToDoubleOrNull(System.Object)">
+            <summary>
+            转换为可空的双精度浮点数
+            </summary>
+            <param name="data">数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.Extend.ToInt(System.Object)">
+            <summary>
+            数据转换为整型，null会转为0！
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.Extend.ToIntOrNull(System.Object)">
+            <summary>
+            转换为可空整型，null会转为0
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.Extend.ToLong(System.Object)">
+            <summary>
+            数据转换为整型，null会转为0！
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.Extend.ToLongOrNull(System.Object)">
+            <summary>
+            转换为可空整型，null会转为0
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.Extend.ToDecimal(System.Object)">
+            <summary>
+            转换为高精度浮点数，null会转为0
+            </summary>
+            <param name="data">数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.Extend.ToDecimal(System.Object,System.Int32)">
+            <summary>
+            转换为高精度浮点数，并按指定的小数位数四舍五入，null会转为0
+            </summary>
+            <param name="data">数据</param>
+            <param name="digits">小数位数</param>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.Extend.ToDecimalOrNull(System.Object)">
+            <summary>
+            转换为可空高精度浮点数
+            </summary>
+            <param name="data">数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.Extend.ToDecimalOrNull(System.Object,System.Int32)">
+            <summary>
+            转换为可空高精度浮点数，并按指定的小数位数四舍五入
+            </summary>
+            <param name="data">数据</param>
+            <param name="digits">小数位数</param>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.Extend.ToDateTime(System.Object)">
+            <summary>
+            转换为日期，null会转为DateTime最小值
+            </summary>
+            <param name="data">数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.Extend.ToDatetimeOrNull(System.Object)">
+            <summary>
+            转换为可空日期
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.Extend.GetBool(System.Object)">
+            <summary>
+            获取可空布尔值，支持转换0-1，是-否，yes-no
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.Extend.ToBool(System.Object)">
+            <summary>
+            转换为布尔值，null会转为false
+            </summary>
+            <param name="data">数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.Extend.ToBoolOrNull(System.Object)">
+            <summary>
+            转换为可空布尔值
+            </summary>
+            <param name="data">数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.Extend.ExToString(System.Object)">
+            <summary>
+             转换为字符串，null会转为string.Empty
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.Extend.ExTrimString(System.Object)">
+            <summary>
+            加强版转换为字符串，并去除两边空格，null会转为string.Empty
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.Extend.SafeGetValue``1(System.Nullable{``0})">
+            <summary>
+            安全的返回值
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="data">数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.Extend.IsEmpty``1(``0)">
+            <summary>
+            加强版是否为空或仅有空白字符组成
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.Extend.IsEmpty(System.Nullable{System.Guid})">
+            <summary>
+            是否为空，null也算作空
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.Extend.IsEmpty(System.Guid)">
+            <summary>
+            是否为空
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CrmCommon.Extend.IsNumber(System.String,System.Int32)">
+            <summary>
+            判断一个字符串是否为合法数字(指定小数位数)
+            </summary>
+            <param name="str">字符串</param>
+            <param name="scale">小数位数</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
