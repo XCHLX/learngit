@@ -1,0 +1,114 @@
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.Printing.Compatibility.VB6.ColorConstants 生成存根: 类型已密封。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.Printing.Compatibility.VB6.DrawStyleConstants 生成存根: 类型已密封。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.Printing.Compatibility.VB6.FillStyleConstants 生成存根: 类型已密封。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.Printing.Compatibility.VB6.PrinterObjectConstants 生成存根: 类型已密封。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.Printing.Compatibility.VB6.ScaleModeConstants 生成存根: 类型已密封。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.Printing.Compatibility.VB6.SystemColorConstants 生成存根: 类型已密封。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.Printing.Compatibility.VB6.CoordinateSpace 生成存根: 类型对 exported or assembly(Microsoft.VisualBasic.PowerPacks.Vs.Fakes) 不可见。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.Printing.Compatibility.VB6.GlobalModule 生成存根: 类型已密封。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.Printing.Compatibility.VB6.GraphicsFactory 生成存根: 类型对 exported or assembly(Microsoft.VisualBasic.PowerPacks.Vs.Fakes) 不可见。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.Printing.Compatibility.VB6.PlaybackPrintDocument 生成存根: 类型对 exported or assembly(Microsoft.VisualBasic.PowerPacks.Vs.Fakes) 不可见。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.Printing.Compatibility.VB6.PrintDocumentBuilder 生成存根: 类型对 exported or assembly(Microsoft.VisualBasic.PowerPacks.Vs.Fakes) 不可见。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.Printing.Compatibility.VB6.PrinterCollection 生成存根: 类型已密封。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.Printing.Compatibility.VB6.PrinterModel 生成存根: 类型对 exported or assembly(Microsoft.VisualBasic.PowerPacks.Vs.Fakes) 不可见。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.Printing.Compatibility.VB6.PrinterObject 生成存根: 类型对 exported or assembly(Microsoft.VisualBasic.PowerPacks.Vs.Fakes) 不可见。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.Printing.Compatibility.VB6.PrinterObjectState 生成存根: 类型是一个值类型。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.Printing.Compatibility.VB6.PrintPageInfo 生成存根: 类型对 exported or assembly(Microsoft.VisualBasic.PowerPacks.Vs.Fakes) 不可见。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.Printing.Constants 生成存根: 类型已密封。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.Printing.LocalizableDescriptionAttribute 生成存根: 类型已密封。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.Printing.Win32API 生成存根: 类型已密封。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.DataRepeaterLayoutStyles 生成存根: 类型是一个值类型。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.DataRepeaterConstants 生成存根: 类型对 exported or assembly(Microsoft.VisualBasic.PowerPacks.Vs.Fakes) 不可见。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.DataRepeaterResourceConstants 生成存根: 类型对 exported or assembly(Microsoft.VisualBasic.PowerPacks.Vs.Fakes) 不可见。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.IDataManager 生成存根: 类型对 exported or assembly(Microsoft.VisualBasic.PowerPacks.Vs.Fakes) 不可见。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.NullDataManager 生成存根: 类型对 exported or assembly(Microsoft.VisualBasic.PowerPacks.Vs.Fakes) 不可见。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.DataManager 生成存根: 类型对 exported or assembly(Microsoft.VisualBasic.PowerPacks.Vs.Fakes) 不可见。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.VirtualDataManager 生成存根: 类型对 exported or assembly(Microsoft.VisualBasic.PowerPacks.Vs.Fakes) 不可见。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.DataRepeaterItemEventHandler 生成存根: 类型已密封。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.DataRepeaterAddRemoveItemsEventHandler 生成存根: 类型已密封。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.DataRepeaterAddRemoveItemsCancelEventHandler 生成存根: 类型已密封。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.DataRepeaterItemValueEventHandler 生成存根: 类型已密封。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.DataRepeaterDataErrorEventHandler 生成存根: 类型已密封。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.DataRepeaterItemCloneEventHandler 生成存根: 类型已密封。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.DataRepeaterControlCollection 生成存根: 类型对 exported or assembly(Microsoft.VisualBasic.PowerPacks.Vs.Fakes) 不可见。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.DataRepeaterBindingInfo 生成存根: 类型对 exported or assembly(Microsoft.VisualBasic.PowerPacks.Vs.Fakes) 不可见。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.DataRepeaterBindingBase 生成存根: 类型对 exported or assembly(Microsoft.VisualBasic.PowerPacks.Vs.Fakes) 不可见。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.DataRepeaterBinding 生成存根: 类型对 exported or assembly(Microsoft.VisualBasic.PowerPacks.Vs.Fakes) 不可见。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.VirtualDataRepeaterBinding 生成存根: 类型对 exported or assembly(Microsoft.VisualBasic.PowerPacks.Vs.Fakes) 不可见。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 System.Windows.Forms.Formatter 生成存根: 类型对 exported or assembly(Microsoft.VisualBasic.PowerPacks.Vs.Fakes) 不可见。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.DataRepeaterSRDescriptionAttribute 生成存根: 类型已密封。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.DataRepeaterSRCategoryAttribute 生成存根: 类型已密封。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.DataRepeaterSR 生成存根: 类型已密封。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.Win32NativeMethods 生成存根: 类型对 exported or assembly(Microsoft.VisualBasic.PowerPacks.Vs.Fakes) 不可见。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.BackStyle 生成存根: 类型是一个值类型。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.FillStyle 生成存根: 类型是一个值类型。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.FillGradientStyle 生成存根: 类型是一个值类型。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.Description 生成存根: 类型已密封。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.ResourceConstants 生成存根: 类型已密封。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.LineShapeAccessibleObject 生成存根: 类型已密封。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.ShapeAccessibleObject 生成存根: 类型对 exported or assembly(Microsoft.VisualBasic.PowerPacks.Vs.Fakes) 不可见。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.ShapeCollection 生成存根: 类型已密封。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.ShapeContainer 生成存根: 类型已密封。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.ShapeContainerAccessibleObject 生成存根: 类型已密封。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.SimpleShapeAccessibleObject 生成存根: 类型已密封。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.SResDescriptionAttribute 生成存根: 类型已密封。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.SResCategoryAttribute 生成存根: 类型已密封。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.SRes 生成存根: 类型已密封。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.Utility 生成存根: 类型已密封。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.Printing.Compatibility.VB6.CoordinateSpace 生成填充码: 类型对 exported or assembly(Microsoft.VisualBasic.PowerPacks.Vs.Fakes) 不可见。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.Printing.Compatibility.VB6.GlobalModule+ErrorCode 生成填充码: 类型是一个枚举。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.Printing.Compatibility.VB6.GraphicsFactory 生成填充码: 类型对 exported or assembly(Microsoft.VisualBasic.PowerPacks.Vs.Fakes) 不可见。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.Printing.Compatibility.VB6.PlaybackPrintDocument 生成填充码: 类型对 exported or assembly(Microsoft.VisualBasic.PowerPacks.Vs.Fakes) 不可见。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.Printing.Compatibility.VB6.PrintDocumentBuilder 生成填充码: 类型对 exported or assembly(Microsoft.VisualBasic.PowerPacks.Vs.Fakes) 不可见。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.Printing.Compatibility.VB6.PrinterCollection+PrinterEnumerator 生成填充码: 类型对 exported or assembly(Microsoft.VisualBasic.PowerPacks.Vs.Fakes) 不可见。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.Printing.Compatibility.VB6.PrinterModel 生成填充码: 类型对 exported or assembly(Microsoft.VisualBasic.PowerPacks.Vs.Fakes) 不可见。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.Printing.Compatibility.VB6.PrinterObject 生成填充码: 类型对 exported or assembly(Microsoft.VisualBasic.PowerPacks.Vs.Fakes) 不可见。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.Printing.Compatibility.VB6.PrinterObjectState 生成填充码: 类型是一个枚举。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.Printing.Compatibility.VB6.PrintPageInfo 生成填充码: 类型对 exported or assembly(Microsoft.VisualBasic.PowerPacks.Vs.Fakes) 不可见。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.Printing.Constants 生成填充码: 类型对 exported or assembly(Microsoft.VisualBasic.PowerPacks.Vs.Fakes) 不可见。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.Printing.PrintForm+PrintFormPrintDoc 生成填充码: 类型对 exported or assembly(Microsoft.VisualBasic.PowerPacks.Vs.Fakes) 不可见。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.Printing.PrintForm+PrintOption 生成填充码: 类型是一个枚举。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.Printing.LocalizableDescriptionAttribute 生成填充码: 类型对 exported or assembly(Microsoft.VisualBasic.PowerPacks.Vs.Fakes) 不可见。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.Printing.Win32API 生成填充码: 类型对 exported or assembly(Microsoft.VisualBasic.PowerPacks.Vs.Fakes) 不可见。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.DataRepeaterLayoutStyles 生成填充码: 类型是一个枚举。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.DataRepeaterConstants 生成填充码: 类型对 exported or assembly(Microsoft.VisualBasic.PowerPacks.Vs.Fakes) 不可见。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.DataRepeaterResourceConstants 生成填充码: 类型对 exported or assembly(Microsoft.VisualBasic.PowerPacks.Vs.Fakes) 不可见。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.IDataManager 生成填充码: 类型是一个接口。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.NullDataManager 生成填充码: 类型对 exported or assembly(Microsoft.VisualBasic.PowerPacks.Vs.Fakes) 不可见。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.DataManager 生成填充码: 类型对 exported or assembly(Microsoft.VisualBasic.PowerPacks.Vs.Fakes) 不可见。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.VirtualDataManager 生成填充码: 类型对 exported or assembly(Microsoft.VisualBasic.PowerPacks.Vs.Fakes) 不可见。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.DataRepeater+DataRepeaterAccessibleObject 生成填充码: 类型对 exported or assembly(Microsoft.VisualBasic.PowerPacks.Vs.Fakes) 不可见。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.DataRepeaterItemEventHandler 生成填充码: 类型是一个委托。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.DataRepeaterAddRemoveItemsEventHandler 生成填充码: 类型是一个委托。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.DataRepeaterAddRemoveItemsCancelEventHandler 生成填充码: 类型是一个委托。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.DataRepeaterItemValueEventHandler 生成填充码: 类型是一个委托。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.DataRepeaterDataErrorEventHandler 生成填充码: 类型是一个委托。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.DataRepeaterItemCloneEventHandler 生成填充码: 类型是一个委托。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.DataRepeaterControlCollection 生成填充码: 类型对 exported or assembly(Microsoft.VisualBasic.PowerPacks.Vs.Fakes) 不可见。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.DataRepeaterBindingInfo 生成填充码: 类型对 exported or assembly(Microsoft.VisualBasic.PowerPacks.Vs.Fakes) 不可见。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.DataRepeaterBindingBase 生成填充码: 类型对 exported or assembly(Microsoft.VisualBasic.PowerPacks.Vs.Fakes) 不可见。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.DataRepeaterBinding 生成填充码: 类型对 exported or assembly(Microsoft.VisualBasic.PowerPacks.Vs.Fakes) 不可见。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.VirtualDataRepeaterBinding 生成填充码: 类型对 exported or assembly(Microsoft.VisualBasic.PowerPacks.Vs.Fakes) 不可见。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.DataRepeaterItem+DataRepeaterItemAccessibleObject 生成填充码: 类型对 exported or assembly(Microsoft.VisualBasic.PowerPacks.Vs.Fakes) 不可见。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 System.Windows.Forms.Formatter 生成填充码: 类型对 exported or assembly(Microsoft.VisualBasic.PowerPacks.Vs.Fakes) 不可见。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.DataRepeaterSRDescriptionAttribute 生成填充码: 类型对 exported or assembly(Microsoft.VisualBasic.PowerPacks.Vs.Fakes) 不可见。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.DataRepeaterSRCategoryAttribute 生成填充码: 类型对 exported or assembly(Microsoft.VisualBasic.PowerPacks.Vs.Fakes) 不可见。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.DataRepeaterSR 生成填充码: 类型对 exported or assembly(Microsoft.VisualBasic.PowerPacks.Vs.Fakes) 不可见。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.Win32NativeMethods 生成填充码: 类型对 exported or assembly(Microsoft.VisualBasic.PowerPacks.Vs.Fakes) 不可见。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.BackStyle 生成填充码: 类型是一个枚举。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.FillStyle 生成填充码: 类型是一个枚举。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.FillGradientStyle 生成填充码: 类型是一个枚举。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.Description 生成填充码: 类型对 exported or assembly(Microsoft.VisualBasic.PowerPacks.Vs.Fakes) 不可见。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.ResourceConstants 生成填充码: 类型对 exported or assembly(Microsoft.VisualBasic.PowerPacks.Vs.Fakes) 不可见。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.LineShapeAccessibleObject 生成填充码: 类型对 exported or assembly(Microsoft.VisualBasic.PowerPacks.Vs.Fakes) 不可见。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.Shape+RegionType 生成填充码: 类型是一个枚举。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.Shape+TagConverter 生成填充码: 类型对 exported or assembly(Microsoft.VisualBasic.PowerPacks.Vs.Fakes) 不可见。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.ShapeAccessibleObject 生成填充码: 类型对 exported or assembly(Microsoft.VisualBasic.PowerPacks.Vs.Fakes) 不可见。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.ShapeContainer+ShapeContainerConverter 生成填充码: 类型对 exported or assembly(Microsoft.VisualBasic.PowerPacks.Vs.Fakes) 不可见。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.ShapeContainer+ShapeContainerMouseHoverTimer 生成填充码: 类型对 exported or assembly(Microsoft.VisualBasic.PowerPacks.Vs.Fakes) 不可见。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.ShapeContainerAccessibleObject 生成填充码: 类型对 exported or assembly(Microsoft.VisualBasic.PowerPacks.Vs.Fakes) 不可见。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.SimpleShapeAccessibleObject 生成填充码: 类型对 exported or assembly(Microsoft.VisualBasic.PowerPacks.Vs.Fakes) 不可见。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.SResDescriptionAttribute 生成填充码: 类型对 exported or assembly(Microsoft.VisualBasic.PowerPacks.Vs.Fakes) 不可见。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.SResCategoryAttribute 生成填充码: 类型对 exported or assembly(Microsoft.VisualBasic.PowerPacks.Vs.Fakes) 不可见。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.SRes 生成填充码: 类型对 exported or assembly(Microsoft.VisualBasic.PowerPacks.Vs.Fakes) 不可见。
+D:\CHL\CHL工具\CopyItems\Fakes\Microsoft.VisualBasic.PowerPacks.Vs.fakes : warning : 无法为 Microsoft.VisualBasic.PowerPacks.Utility 生成填充码: 类型对 exported or assembly(Microsoft.VisualBasic.PowerPacks.Vs.Fakes) 不可见。
